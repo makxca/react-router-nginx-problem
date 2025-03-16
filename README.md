@@ -9,6 +9,7 @@ For checking this I created a nginx-server (check [nginx.conf](./nginx.conf)) an
 ### Prerequisites
 
 - pnpm@7.33.6
+- A default Ubuntu 22.04 LTS server (you can easily create one using [Yandex Cloud](https://console.yandex.cloud/))
 
 ### Upload to Yandex Cloud
 
@@ -24,3 +25,9 @@ pnpm server:upload
 ```
 
 The script will install nginx on the server, download the built app there and start the server. The script will require your username and the ip address of the server. It assumes, that you use ssh-keys for authentication (password authentication is _bad_).
+
+## Results
+
+Yep, as expected. The URL in the browser says I am at /app2, but the app1 UI is rendered.
+
+![alt text](demo.gif)

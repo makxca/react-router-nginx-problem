@@ -13,7 +13,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React (APP1)</h1>
+      <h1>Vite + React (APP2)</h1>
       <Link to="/app1/">go to app1</Link>
     </>
   )
