@@ -4,7 +4,14 @@
   "description": "This project tries using react-router-dom for navigation between two different projects, living on the same domain. Nginx is used as a web-server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:1": "pnpm --filter app1 run build",
+    "build:2": "pnpm --filter app2 run build",
+    "build": "pnpm run build:1 && pnpm run build:2",
+    "pack:prepare": "mkdir -p dist && mkdir -p dist/app1 && mkdir -p dist/app2",
+    "pack:cp-dist": "cp -r packages/app1/dist/* dist/app1/ && cp -r packages/app2/dist/* dist/app2/",
+    "pack:dist": "pnpm build && pnpm pack:prepare && pnpm pack:cp-dist",
+    "yc:upload": "./scripts/yc-upload.sh",
+    "server:upload": "./scripts/deploy.sh"
   },
   "repository": {
     "type": "git",
