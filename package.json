@@ -10,7 +10,6 @@
     "pack:prepare": "mkdir -p dist && mkdir -p dist/app1 && mkdir -p dist/app2",
     "pack:cp-dist": "cp -r packages/app1/dist/* dist/app1/ && cp -r packages/app2/dist/* dist/app2/",
     "pack:dist": "pnpm build && pnpm pack:prepare && pnpm pack:cp-dist",
-    "yc:upload": "./scripts/yc-upload.sh",
     "server:upload": "./scripts/deploy.sh"
   },
   "repository": {

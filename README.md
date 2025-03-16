@@ -9,7 +9,6 @@ For checking this I created a nginx-server (check [nginx.conf](./nginx.conf)) an
 ### Prerequisites
 
 - pnpm@7.33.6
-- yc utility: [ru](https://yandex.cloud/ru/docs/storage/tools/yc-cli#macos_1), [en](https://yandex.cloud/en/docs/storage/tools/yc-cli#macos_1)
 
 ### Upload to Yandex Cloud
 
