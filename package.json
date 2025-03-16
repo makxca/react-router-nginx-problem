@@ -1,0 +1,24 @@
+{
+  "name": "react-router-nginx-problem",
+  "version": "1.0.0",
+  "description": "This project tries using react-router-dom for navigation between two different projects, living on the same domain. Nginx is used as a web-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makxca/react-router-nginx-problem.git"
+  },
+  "keywords": [
+    "react-router-dom",
+    "nginx",
+    "microfrontends"
+  ],
+  "author": "makxca",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/makxca/react-router-nginx-problem/issues"
+  },
+  "homepage": "https://github.com/makxca/react-router-nginx-problem#readme"
+}
